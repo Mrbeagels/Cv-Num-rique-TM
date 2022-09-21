@@ -1,3 +1,12 @@
+::before, ::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+h1{
+    font-family: Abril fatface, sans-serif;
+}
+
 header{
     height: 100vh;
     background-repeat:no-repeat ;
@@ -6,17 +15,43 @@ header{
     background-position:center ;
 }
 
-.bgNav{background: rgba( 155, 155, 155, 0.2 );
-box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-backdrop-filter: blur( 3.5px );
--webkit-backdrop-filter: blur( 3.5px );
-border-radius: 10px;
-border: 1px solid rgba( 255, 255, 255, 0.18 );
-color: white;
+nav{
+    width: 100%;
+    height: 70px;
+    background-color: transparent;
+    transition: all 0.3s ease-out;
 }
-.bgNav a{
-    color: white !important;
+.bgNav{
+background: #333;
+color: #f1f1f1;
+/* border-bottom: 1px solid #f1f1f1; */
+border-radius: 2px;
 }
+.clickAnim{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: linear-gradient(to top, #ff4e50, #f9d432);
+    position: absolute;
+    z-index: 9000;
+    transform: scale(0);
+    transform-origin: center;
+    animation: clickAnim 1s ease-in-out;
+}
+@keyframes clickAnim{
+    0%{
+        transform: scale(0);
+    }
+    50%{
+        transform: scale(2);
+        opacity: 1;
+    }
+    0%{
+        transform: scale(0);
+        opacity: 0;
+    }
+}
+
 .headerText{
     height: 100%;
     display: flex;
@@ -32,6 +67,7 @@ color: white;
     font-style: italic;
     color: white;
 }
+
 .headerH1{
     font-size: 35px;
     color: white;
@@ -43,6 +79,7 @@ color: white;
     filter: invert();
 }
 /* About me  */
+
 .aboutMe{
     display: flex;
     align-items: center;
@@ -70,16 +107,17 @@ color: white;
 }
 .btn{
     width: 300px;
-    background-color: pink !important;
+
 }
 
 /* skills */
-.card{
+/* .skills .card{
     width: 23rem;
-}
+} */
 .skills{
     background-color:rgb(214, 219, 223) ;
 }
+
 .titleFront{
     color: #A569BD ;
     text-align: center;
@@ -144,6 +182,26 @@ color: #3498DB;
     transform: translateY(-15px);
 }
 
+/* transition d'apparition en js compétences / skills */
+.reveal{
+    opacity: 0;
+    transform: translateY(-30px);
+}
+.reveal-visible{
+    opacity: 1;
+    transform: translateY(0);
+    transition: 1s cubic-bezier(.5, 0 , 0 ,1);
+}
+
+/* PortFolio */
+
+.fontTitleCard{
+    font-family: Abril fatface, sans-serif;
+}
+.bgParcours{
+    background-color:rgb(214, 219, 223) ;
+}
+
 
 
 /* on screen < 600px */
@@ -160,10 +218,19 @@ color: #3498DB;
     .webIcon{
         display: none !important;
     }
+    .aboutMeMargin{
+        text-align: center;
+    }
+    .thibaud{
+        height: 450px;
+        width: 290;
+        display: flex;
+        justify-content: center;
+    }
 }
 /* on screen > 600px */
 @media screen and (min-width :600px) {
-    .card{
+    .skills .card{
         height: 300px;
         width: 40rem;
     }
@@ -171,7 +238,25 @@ color: #3498DB;
         padding-top: 30px;
         height: 700px;
     }
-    
+    #aboutMeSize{
+        font-size: 29px;
+    }
+    .aboutMeMargin{
+        margin-left: 35px;
+    }
+    .headerH1{
+        font-size: 55px;
+    }
+    .header2{
+        font-size: 35px;
+    }
+    .headerP{
+        font-size: 18px;
+    }
+    body p{
+        font-size: 18px;
+    }
 }
+
 
 

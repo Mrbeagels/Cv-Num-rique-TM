@@ -15,36 +15,46 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- CDN font -->
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header class="container-fluid">
-        <nav class="navbar sticky-top navbar-expand-lg navbar-light bgNav">
+        <nav class="navbar fixed-top navbar-expand-lg text-light">
             <div class="container-fluid">
-                <h1>Thibaud Marin </h1>
+                <h1>Thibaud Marin</h1>
+                <button class="navbar-toggler " type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#aboutMe">À PROPOS</a>
+                            <a class="nav-link active text-light" aria-current="page" href="#aboutMe">À PROPOS</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">COMPÉTENCES</a>
+                            <a class="nav-link text-light" href="#skills">COMPÉTENCES</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">PARCOURS</a>
+                            <a class="nav-link text-light" href="#portfolio">RÉALISATIONS</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">RÉALISATIONS </a>
+                            <a class="nav-link text-light" href="#parcours">PARCOURS</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">CONTACT</a>
+                            <a class="nav-link text-light" href="#">CONTACT</a>
+                        </li>
+                        <li class="nav-item dropdown">
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
-        <div class="headerText" id="aboutMe">
-            <h2 class="headerH2">Bonjour, je m'appelle Thibaud et je suis :</h2>
+        <div class="headerText">
+            <h2 class="headerH2 titleSpans"> <span> Bonjour</span> <span> je</span> <span> m'appelle</span><span>
+                    Thibaud</span><span> et</span><span> je</span><span> suis :</span> </h2>
             <h1 class="headerH1">Développeur web junior</h1>
             <p class="headerP">Je suis à la recherche d'un emploi en <span class="bigger">CDi</span> (temps plein) à
                 <span class="bigger">Amiens</span> et alentour à partir de <span class="bigger">décembre 2022</span></p>
@@ -68,18 +78,20 @@
             </div>
         </div>
     </header>
-    <section class=" container-fluid">
-        <div class="row aboutMe">
-            <div class="col-4 col-lg-4 thibaud">
+    <section class=" container-fluid mt-5">
+        <div class="row aboutMe" id="aboutMe">
+            <div class="col-10 col-lg-4 thibaud">
 
             </div>
-            <div class="col-7 col-lg-78">
-                <h3 id="aboutMe" class="text-center my-5">À propos de moi</h3>
-                <p><strong>Age : </strong> 27 ans</p>
-                <p><strong>Ville actuelle : </strong>Amiens (80)</p>
-                <p><strong>Hobbies : </strong>Communication, arts créatif, nature et animaux, jeux vidéo, cuisine
+            <div class="col-12 col-lg-6" id="aboutMeSize">
+                <h3 class="text-center my-5 fs-1">À propos de moi</h3>
+                <p class="aboutMeMargin"><strong>Age : </strong> 27 ans</p>
+                <p class="aboutMeMargin"><strong>Ville actuelle : </strong>Amiens (80)</p>
+                <p class="aboutMeMargin"><strong>Hobbies : </strong>Communication, arts créatif, nature et animaux, jeux
+                    vidéo, cuisine
                 </p>
-                <p><strong>Compétences principales : </strong> Développement Web front & back, référencement SEO,
+                <p class="aboutMeMargin"><strong>Compétences principales : </strong> Développement Web front & back,
+                    référencement SEO,
                     community manager
                 </p>
             </div>
@@ -87,10 +99,10 @@
                 <p class="mt-5">Développeur web junior, je recherche un emploi après avoir passé 6 mois en formation au
                     sein de la Manu. Cette expérience m’a permis d’acquérir autonomie et confiance en moi, suite à une
                     reconversion professionnelle.</p> <br>
-                    <p>Je profite aujourd’hui du temps dont je dispose pour continuer d’apprendre de nouvelles technologies
+                <p>Je profite aujourd’hui du temps dont je dispose pour continuer d’apprendre de nouvelles technologies
                     et de notamment enrichir mes connaissances en développement web et web mobile, en marketing digital,
-                    community management et référencement web.</p>  <br>
-                    <p> Après avoir obtenu un DEUG en économie au sein de l'université de Picardie Jules Verne et passé deux
+                    community management et référencement web.</p> <br>
+                <p> Après avoir obtenu un DEUG en économie au sein de l'université de Picardie Jules Verne et passé deux
                     ans dans le commerce, je me suis réorienté en cuisine, j'ai gravi les échelons des différents
                     restaurants ou j'ai travaillé avec succès et j'ai validé mes acquis avec un CAP. Comme beaucoup,
                     suite au COVID, j'ai décidé de changer de voie pour les métiers du numérique afin d'exercer au mieux
@@ -98,25 +110,27 @@
                     m’intéresse également au web design et aux arts graphiques en général, ce qui me permet d’aborder le
                     développement front-end avec sérénité, même lorsque je ne dispose pas de maquette ou de directives
                     précises.</p> <br>
-                    <p> Autonome de nature, je peux travailler seul ou en groupe, étant également capable de m’adapter à un
+                <p> Autonome de nature, je peux travailler seul ou en groupe, étant également capable de m’adapter à un
                     environnement que je ne connais pas. Je sais faire preuve de force de proposition lorsque l’on m’en
                     donne la liberté, cherchant toujours à améliorer et à optimiser les projets au maximum pour
                     satisfaire au mieux la demande du client.</p>
             </div>
         </div>
         <div class="contactBtn">
-            <button type="button" class="btn btn-success mb-4">ME CONTACTER</button> <br>
+            <a href="mailto:thibaud.marin1@gmail.com"><button type="button" class="btn btn-success mb-4">ME
+                    CONTACTER</button></a> <br>
             <button type="button" class="btn btn-success">TÉLÉCHARGER MON CV</button>
         </div>
     </section>
 
     <!-- Compétences -->
-    <section class="container-fluid skills">
-        <h2 class="text-center py-5">COMPÉTENCES</h2>
-
-                                                    <!-- Front -->
-        <div class="d-flex d-flex justify-content-around align-items-center">
-            <div class="card" >
+    <section class="container-fluid skills" id="skills">
+        <div class="reveal">
+            <h2 class="text-center py-5">COMPÉTENCES</h2>
+        </div>
+        <!-- Front -->
+        <div class="d-flex justify-content-around align-items-center">
+            <div class="card reveal">
                 <div class="card-body">
                     <h5 class="titleFront mb-5">Front-end</h5>
                     <p class="card-text">Création et intégration de sites web et applications mobiles responsive,
@@ -164,21 +178,22 @@
                     </div>
                 </div>
             </div>
-            <div >
-            <i class="fas fa-code codeIcon"></i>
+            <div>
+                <i class="fas fa-code codeIcon"></i>
             </div>
         </div>
 
         <div class="d-flex justify-content-around align-items-center">
-        <di>
-            <i class="fas fa-database databaseIcon"></i>
-        </di>
-            <div class="card mt-5" >
+            <di>
+                <i class="fas fa-database databaseIcon"></i>
+            </di>
+            <div class="card mt-5 reveal">
                 <div class="card-body">
                     <h5 class="titleBack mb-5">Back-end</h5>
-                    <p class="card-text">Développement de sites web et applications, création et gestion de bases de données, programmation orientée objet et modèle 3 tiers, mise en ligne.</p>
+                    <p class="card-text">Développement de sites web et applications, création et gestion de bases de
+                        données, programmation orientée objet et modèle 3 tiers, mise en ligne.</p>
                 </div>
-                                            <!-- Back -->
+                <!-- Back -->
                 <div class="row ">
                     <div class="col-6 col-lg-6 d-flex">
                         <p class="ps-2 pe-4">PHP8</p>
@@ -188,7 +203,7 @@
                         <i class="fas fa-star backColor pt-1 "></i>
                     </div>
                     <div class="col-6 col-lg-6 d-flex">
-                        <p class="pe-3">MySQL</p>
+                        <p class="pe-5 me-2">MySQL</p>
                         <i class="fas fa-star backColor pt-1 "></i>
                         <i class="fas fa-star backColor  pt-1"></i>
                         <i class="fas fa-star backColor  pt-1"></i>
@@ -203,16 +218,26 @@
                         <i class="fas fa-star backColor pt-1 "></i>
                         <i class="fas fa-star pt-1 "></i>
                     </div>
+                    <div class="col-6 col-lg-6 d-flex">
+                        <p class="me-1 pe-4">Symphony</p>
+                        <i class="fas fa-star backColor pt-1"></i>
+                        <i class="fas fa-star backColor pt-1 "></i>
+                        <i class="fas fa-star  pt-1 "></i>
+                        <i class="fas fa-star pt-1 "></i>
+                    </div>
                 </div>
             </div>
         </div>
+        <!-- CMS -->
         <div class="d-flex justify-content-around align-items-center">
-            <div class="card mt-5" >
+            <div class="card mt-5 reveal">
                 <div class="card-body">
                     <h5 class="titleCms mb-5">CMS</h5>
-                    <p class="card-text">Création et édition de thèmes et plugins. Mon expérience est principalement portée sur WordPress. J'ai l'habitude de travailler avec les plugins WooCommerce, ACF et Yoast SEO</p>
+                    <p class="card-text">Création et édition de thèmes et plugins. Mon expérience est principalement
+                        portée sur WordPress. J'ai l'habitude de travailler avec les plugins WooCommerce, ACF et Yoast
+                        SEO</p>
                 </div>
-                                            <!-- CMS -->
+
                 <div class="row ">
                     <div class="col-6 col-lg-6 d-flex">
                         <p class="ps-2 pe-4">Wordpress</p>
@@ -230,19 +255,21 @@
                     </div>
                 </div>
             </div>
-            <div >
+            <div>
                 <i class="fas fa-pencil cmsIcon"></i>
-                </div>
+            </div>
         </div>
-                                    <!-- Web Design -->
+        <!-- Web Design -->
         <div class="d-flex justify-content-around align-items-center">
-            <div >
+            <div>
                 <i class="fas fa-user-edit webIcon"></i>
-                </div>
-            <div class="card mt-5 " >
+            </div>
+            <div class="card my-5 reveal">
                 <div class="card-body">
                     <h5 class="titleWeb mb-5">Web design</h5>
-                    <p class="card-text">Création de maquettes XD et HTML, ainsi que de prototypes fonctionnels. Conception centrée utilisateur selon les règles d'UX lors de la création d'une interface utilisateur.</p>
+                    <p class="card-text">Création de maquettes XD et HTML, ainsi que de prototypes fonctionnels.
+                        Conception centrée utilisateur selon les règles d'UX lors de la création d'une interface
+                        utilisateur.</p>
                 </div>
                 <div class="row ">
                     <div class="col-6 col-lg-6 d-flex">
@@ -278,13 +305,160 @@
                 </div>
             </div>
         </div>
-        
-
     </section>
+    <section id="portfolio" class="portfolio mt-5">
+        <!-- portefolio en travaux -->
+        <div>
+            <div class="reveal">
+                <h2 class="text-center py-5 ">PORTFOLIO</h2>
+            </div>
+            <div class="row justify-content-around mb-5">
+                <div class=" col-12 col-lg-3">
+                    <a href="https://mrbeagels.github.io/Tools-cards/" target="_blank"> <img
+                            src="public/assets/img/leKit.png" class="card-img-top"
+                            alt="illustration du site Tool-cards, le kit du petit developpeur junior"></a>
+                    <div class="card-body d-flex flex-column justify-content-around bgGlobal">
+                        <h5 class="card-title text-center fontTitleCard">Le kit du petit developpeur</h5>
+                        <p class="card-text">Exercice sur les cards de Bootstrap, thème libre j'ai donc choisis de
+                            travailler en mettant en avant des sites/application pouvant être utiles a mes camarades et
+                            à moi-même dans notre carrière de développeurs juniors </p>
 
+                    </div>
+                </div>
+                <div class=" col-12 col-lg-3">
+                    <a href="https://mrbeagels.github.io/Landing-page/" target="_blank"> <img
+                            src="public/assets/img/landing-page.png" class="card-img-top"
+                            alt="illustration de la landing page, u need some rest"></a>
+                    <div class="card-body d-flex flex-column justify-content-around bgGlobal">
+                        <h5 class="card-title text-center fontTitleCard">Landing Page</h5>
+                        <p class="card-text">Création d'une landing page moderne assez générique avec utilisation de
+                            GSAP et de Javascript. Intégration d'une TimeLine pour le défilement des animations</p>
+                    </div>
+                </div>
+                <div class=" col-12 col-lg-3">
+                    <a href="https://mrbeagels.github.io/Shifumi/" target="_blank"> <img
+                            src="public/assets/img/shifumi.png" class="card-img-top"
+                            alt="Illustration du shifumi réaliser en Javascript"></a>
+                    <div class="card-body d-flex flex-column justify-content-around bgGlobal">
+                        <h5 class="card-title text-center fontTitleCard">Shifumi</h5>
+                        <p class="card-text">Réalisation d'un shifumi afin de comprendre les bases de Javascript, thème
+                            libre, Front encore en travaux.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-around mb-5">
+                <div class=" col-12 col-lg-3">
+                    <a href="https://itsworking.fr/" target="_blank"> <img
+                            src="public/assets/img/itsWorking.png" class="card-img-top"
+                            alt="Its working site de dépanage informatique"></a>
+                    <div class="card-body d-flex flex-column justify-content-around bgGlobal">
+                        <h5 class="card-title text-center fontTitleCard">Refonte Front du site It's Working</h5>
+                        <p class="card-text">Durant un stage d'une semaine, j'ai réaliser une refonte graphique total du site It's Working. respect des demandes du client en matiére de couleur et de logo. </p>
+                    </div>
+                </div>
+                <div class=" col-12 col-lg-3">
+                    <a href="https://mrbeagels.github.io/Parallax/" target="_blank"> <img
+                            src="public/assets/img/scroll-exo.png" class="card-img-top"
+                            alt="Page d'acueil réaliser avec Parallax"></a>
+                    <div class="card-body d-flex flex-column justify-content-around bgGlobal">
+                        <h5 class="card-title text-center fontTitleCard">Page d'acueil réaliser avec Parallax</h5>
+                        <p class="card-text">Exercice de création d'une landing page, utilisation de Parallax afin de ralentir ou de rallonger l'animation de scroll des titres </p>
+                    </div>
+                </div>
+                <div class=" col-12 col-lg-3">
+                    <a href="https://mrbeagels.github.io/balayage/" target="_blank"> <img
+                            src="public/assets/img/GSAP.png" class="card-img-top"
+                            alt="Page d'accueil réaliser avec GSAP"></a>
+                    <div class="card-body d-flex flex-column justify-content-around bgGlobal">
+                        <h5 class="card-title text-center fontTitleCard">Page d'accueil réaliser avec GSAP</h5>
+                        <p class="card-text"> Exercice de création d'une landing page, utilisation de GSAP afin de créer un scroll différent et personnalisé </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section parcours -->
+    <section class="container-fluid">
+        <div class="reveal">
+            <h2 class="text-center py-5">PARCOURS & FORMATION</h2>
+        </div>
+        <div class="row">
+            <div class="col-lg-4">
+            </div>
+            <div class="col-12 col-lg-7 bgParcours rounded mb-5">
+                <div class="card-body ">
+                    <div class="inline">
+                        <h2 class="card-title text-center"><i class="bi bi-laptop"></i> Formation DWWM</h2>
+                    </div>
+                    <div class="text-center">
+                        <h4> Avril 2022 à octobre 2022</h4>
+                        <h4> <a class="text-dark text-decoration-none" href="https://lamanu.fr/"> La manu</a>, Amiens(80)</h4>
+                    </div>
+                    <ul>
+                        <h6 class="fw-bold text-center my-5 ">Développer la partie front-end d’une
+                            application web ou web mobile en intégrant
+                            les recommandations de sécurité</h6>
+                        <li>Maquetter une application</li>
+                        <li>Réaliser une interface utilisateur web statique et adaptable</li>
+                        <li>Développer une interface utilisateur web dynamique</li>
+                        <li>Réaliser une interface utilisateur avec une solution de gestion de contenu ou e-
+                            commerce</li>
+                        <h6 class="fw-bold text-center my-5 ">Développer la partie back-end d’une
+                            application
+                            web ou web mobile en intégrant
+                            les recommandations de sécurité</h6>
+                        <li>Créer une base de données</li>
+                        <li>Développer les composants d’accès aux donnée</li>
+                        <li>Développer la partie back-end d’une application web ou web mobile</li>
+                        <li>Elaborer et mettre en oeuvre des composants dans une application de gestion de
+                            contenu ou e-commerce</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4">
+            </div>
+            <div class="col-12 col-lg-7 bgParcours rounded mb-5">
+                <div class="card-body ">
+                    <div class="inline">
+                        <h2 class="card-title text-center"><i class="bi bi-laptop"></i> Formation DWWM</h2>
+                    </div>
+                    <div class="text-center">
+                        <h4> Avril 2022 à octobre 2022</h4>
+                        <h4> <a class="text-dark text-decoration-none" href="https://lamanu.fr/"> La manu</a>, Amiens(80)</h4>
+                    </div>
+                    <ul>
+                        <h6 class="fw-bold my-5 text-center">Développer la partie front-end d’une
+                            application web ou web mobile en intégrant
+                            les recommandations de sécurité</h6>
+                        <li>Maquetter une application</li>
+                        <li>Réaliser une interface utilisateur web statique et adaptable</li>
+                        <li>Développer une interface utilisateur web dynamique</li>
+                        <li>Réaliser une interface utilisateur avec une solution de gestion de contenu ou e-
+                            commerce</li>
+                        <h6 class="fw-bold text-center my-5 ">Développer la partie back-end d’une
+                            application
+                            web ou web mobile en intégrant
+                            les recommandations de sécurité</h6>
+                        <li>Créer une base de données</li>
+                        <li>Développer les composants d’accès aux donnée</li>
+                        <li>Développer la partie back-end d’une application web ou web mobile</li>
+                        <li>Elaborer et mettre en oeuvre des composants dans une application de gestion de
+                            contenu ou e-commerce</li>
+                    </ul>
+                </div>
+            </div>
+    </div>
+    </section>
+    <!-- CDN GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <!-- CDN Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
     </script>
+    <!-- CDN Perso -->
+    <script src="public/assets/js/script.js"></script>
 </body>
 
 </html>
