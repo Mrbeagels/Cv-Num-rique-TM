@@ -1,5 +1,5 @@
 const navigation = document.querySelector('nav');
-const titreSpans = document.querySelectorAll('.titleSpans span')
+const titleSpans = document.querySelectorAll('.titleSpans span')
 
 window.addEventListener('scroll', () => {
     if(window.scrollY >930) {
@@ -29,7 +29,7 @@ window.addEventListener ('load', () =>{
     const TL = gsap.timeline({pause:true});
 
     TL
-    .staggerFrom(titreSpans, 1, { opacity: 0, ease: "power2.out"}, 0.3)
+    .staggerFrom(titleSpans, 1, { opacity: 0, ease: "power2.out"}, 0.3)
 
     TL.play();
 })

@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV numérique Thibaud Marin</title>
+    <meta name="description" content="CV numérique de thibaud marin, développeur Front & back End, disponible dans le nord de la France. J'ai également une formation en marketing et comminity manager.">
     <link rel="stylesheet" href="public/assets/css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
@@ -22,12 +23,12 @@
 <body>
     <header class="container-fluid">
         <nav class="navbar fixed-top navbar-expand-lg text-light">
-            <div class="container-fluid">
+            <div class="container navTry">
                 <h1>Thibaud Marin</h1>
                 <button class="navbar-toggler " type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
                     aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon "></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="navbar-nav">
@@ -79,8 +80,8 @@
         </div>
     </header>
     <section class=" container-fluid mt-5">
-        <div class="row aboutMe" id="aboutMe">
-            <div class="col-10 col-lg-4 thibaud">
+        <div class="row aboutMe ps-5" id="aboutMe">
+            <div class="col-10 col-lg-4 thibaud ">
 
             </div>
             <div class="col-12 col-lg-6" id="aboutMeSize">
@@ -95,7 +96,7 @@
                     community manager
                 </p>
             </div>
-            <div>
+            <div class="ps-5">
                 <p class="mt-5">Développeur web junior, je recherche un emploi après avoir passé 6 mois en formation au
                     sein de la Manu. Cette expérience m’a permis d’acquérir autonomie et confiance en moi, suite à une
                     reconversion professionnelle.</p> <br>
@@ -119,7 +120,7 @@
         <div class="contactBtn">
             <a href="mailto:thibaud.marin1@gmail.com"><button type="button" class="btn btn-success mb-4">ME
                     CONTACTER</button></a> <br>
-            <button type="button" class="btn btn-success">TÉLÉCHARGER MON CV</button>
+            <a href="public/assets/img/CV Thibaud MARIN.pdf" download="CV_Thibaud_Marin"><button type="button" class="btn btn-success">TÉLÉCHARGER MON CV</button></a>
         </div>
     </section>
 
@@ -306,14 +307,14 @@
             </div>
         </div>
     </section>
-    <section id="portfolio" class="portfolio mt-5">
+    <section id="portfolio" class="portfolio mt-5 container-fluid">
         <!-- portefolio en travaux -->
         <div>
             <div class="reveal">
                 <h2 class="text-center py-5 ">PORTFOLIO</h2>
             </div>
             <div class="row justify-content-around mb-5">
-                <div class=" col-12 col-lg-3">
+                <div class=" cardBox col-12 col-lg-3">
                     <a href="https://mrbeagels.github.io/Tools-cards/" target="_blank"> <img
                             src="public/assets/img/leKit.png" class="card-img-top"
                             alt="illustration du site Tool-cards, le kit du petit developpeur junior"></a>
@@ -325,7 +326,7 @@
 
                     </div>
                 </div>
-                <div class=" col-12 col-lg-3">
+                <div class=" cardBox col-12 col-lg-3">
                     <a href="https://mrbeagels.github.io/Landing-page/" target="_blank"> <img
                             src="public/assets/img/landing-page.png" class="card-img-top"
                             alt="illustration de la landing page, u need some rest"></a>
@@ -335,7 +336,7 @@
                             GSAP et de Javascript. Intégration d'une TimeLine pour le défilement des animations</p>
                     </div>
                 </div>
-                <div class=" col-12 col-lg-3">
+                <div class=" cardBox col-12 col-lg-3">
                     <a href="https://mrbeagels.github.io/Shifumi/" target="_blank"> <img
                             src="public/assets/img/shifumi.png" class="card-img-top"
                             alt="Illustration du shifumi réaliser en Javascript"></a>
@@ -347,7 +348,7 @@
                 </div>
             </div>
             <div class="row justify-content-around mb-5">
-                <div class=" col-12 col-lg-3">
+                <div class=" cardBox col-12 col-lg-3">
                     <a href="https://itsworking.fr/" target="_blank"> <img
                             src="public/assets/img/itsWorking.png" class="card-img-top"
                             alt="Its working site de dépanage informatique"></a>
@@ -356,7 +357,7 @@
                         <p class="card-text">Durant un stage d'une semaine, j'ai réalisé une refonte graphique total du site It's Working. respect des demandes du client en matiére de couleur et de logo. </p>
                     </div>
                 </div>
-                <div class=" col-12 col-lg-3">
+                <div class=" cardBox col-12 col-lg-3">
                     <a href="https://mrbeagels.github.io/Parallax/" target="_blank"> <img
                             src="public/assets/img/scroll-exo.png" class="card-img-top"
                             alt="Page d'acueil réaliser avec Parallax"></a>
@@ -365,7 +366,7 @@
                         <p class="card-text">Exercice de création d'une landing page, utilisation de Parallax afin de ralentir ou de rallonger l'animation de scroll des titres </p>
                     </div>
                 </div>
-                <div class=" col-12 col-lg-3">
+                <div class=" cardBox col-12 col-lg-3">
                     <a href="https://mrbeagels.github.io/balayage/" target="_blank"> <img
                             src="public/assets/img/GSAP.png" class="card-img-top"
                             alt="Page d'accueil réaliser avec GSAP"></a>
@@ -451,6 +452,31 @@
             </div>
     </div>
     </section>
+    <footer class="bg-dark text-center text-white footer">
+        <div class="container">
+            <!-- Section: Social media -->
+            <div class="row">
+                <!-- Github -->
+                <div class="col-6 d-flex justify-content-center">
+                    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+                    <a href="https://github.com/Mrbeagels"><lottie-player class="footerIcons" src="https://assets3.lottiefiles.com/private_files/lf30_1ldonjtk.json"
+                        background="transparent" speed="1" loop autoplay>
+                    </lottie-player></a>
+                </div>
+                <!-- linkedin -->
+                <div class="col-6 d-flex justify-content-center">
+                    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+                    <a href="https://www.linkedin.com/in/thibaud-marin-25a0b023a/"><lottie-player class="footerIcons" src="https://assets2.lottiefiles.com/private_files/lf30_qqx4zbms.json"
+                        background="transparent" speed="1" loop autoplay>
+                    </lottie-player></a>
+                </div>
+            </div>
+            <!-- Copyright -->
+            <div>
+                © 2022 Copyright : Thibaud Marin.
+            </div>
+        </div>
+    </footer>
     <!-- CDN GSAP -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
     <!-- CDN Bootstrap -->

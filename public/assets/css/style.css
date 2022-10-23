@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
 }
+nav
 h1{
     font-family: Abril fatface, sans-serif;
 }
@@ -13,18 +14,20 @@ header{
     background-image: url(../img/Web\ 1920\ –\ 1.png);
     background-size:cover ;
     background-position:center ;
+    
 }
 
 nav{
-    width: 100%;
+    /* width: 100%; */
+    padding: -12px;
     height: 70px;
     background-color: transparent;
     transition: all 0.3s ease-out;
 }
+
 .bgNav{
 background: #333;
 color: #f1f1f1;
-/* border-bottom: 1px solid #f1f1f1; */
 border-radius: 2px;
 }
 .clickAnim{
@@ -51,6 +54,21 @@ border-radius: 2px;
         opacity: 0;
     }
 }
+.card {
+    transition: 0.5s all ease-in-out;
+}
+.card:hover {
+    transform: scale(1.1);
+    box-shadow: rgba(255, 255, 255, 0.3) 0px 19px 38px, rgba(255, 255, 255, 0.22) 0px 15px 12px;
+}
+.cardBox {
+    transition: 0.5s all ease-in-out;
+}
+.cardBox:hover {
+    transform: scale(1.1);
+    box-shadow: rgba(255, 255, 255, 0.3) 0px 19px 38px, rgba(255, 255, 255, 0.22) 0px 15px 12px;
+}
+
 
 .headerText{
     height: 100%;
@@ -202,6 +220,11 @@ color: #3498DB;
     background-color:rgb(214, 219, 223) ;
 }
 
+/* footer */
+.footerIcons{
+width: 80px;
+height: 80px;
+}
 
 
 /* on screen < 600px */
