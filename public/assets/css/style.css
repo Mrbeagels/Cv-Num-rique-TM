@@ -3,8 +3,8 @@
     margin: 0;
     padding: 0;
 }
-nav
-h1{
+
+.titleFont{
     font-family: Abril fatface, sans-serif;
 }
 
@@ -65,10 +65,12 @@ border-radius: 2px;
     transition: 0.5s all ease-in-out;
 }
 .cardBox:hover {
-    transform: scale(1.1);
+    transform: scale(1.2);
     box-shadow: rgba(255, 255, 255, 0.3) 0px 19px 38px, rgba(255, 255, 255, 0.22) 0px 15px 12px;
+    background-color: #333;
+    color: whitesmoke;
+    border-radius: 5px;
 }
-
 
 .headerText{
     height: 100%;
@@ -103,26 +105,14 @@ border-radius: 2px;
     align-items: center;
 }
 .thibaud{
-    margin-left: 12px;
-    border-radius: 20px;
-    height: 250px;
-    background-image: url("../img/thibaud2.jpg") ;
-    background-position: center;
-    background-repeat:no-repeat ;
-    background-size: cover;
+    height: 400px !important;
+    border-radius: 15px;
 }
 
 .btn{
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
-.contactBtn{
-    height: 200px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
+
 .btn{
     width: 300px;
 
@@ -220,6 +210,7 @@ color: #3498DB;
     background-color:rgb(214, 219, 223) ;
 }
 
+
 /* footer */
 .footerIcons{
 width: 80px;
@@ -256,10 +247,6 @@ height: 80px;
     .skills .card{
         height: 300px;
         width: 40rem;
-    }
-    .thibaud{
-        padding-top: 30px;
-        height: 700px;
     }
     #aboutMeSize{
         font-size: 29px;
